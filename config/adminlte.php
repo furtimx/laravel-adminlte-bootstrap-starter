@@ -309,7 +309,7 @@ return [
         [
             'text' => 'Dashboard',
             'url' => 'dashboard',
-            'icon' => 'fa-solid fa-border-all',
+            'icon' => 'fa-solid fa-gauge',
         ],
 
     ],
