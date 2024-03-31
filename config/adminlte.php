@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'Furtim Admin',
     'title_prefix' => '',
     'title_postfix' => '',
 
