@@ -18,7 +18,13 @@
 
             @php
                 if (! empty($file['asset'])) {
+                    $orig_loc = $file['location'];
                     $file['location'] = asset($file['location']);
+                    $path = realpath($orig_loc);
+                    if(file_exists($path)) {
+                        $time = filemtime($path);
+                        $file['location'] .= '?v=' . $time;
+                    }
                 }
             @endphp
 
